@@ -7,6 +7,8 @@ function createPost() {
   let postBody=document.getElementById("postBody");
   let postAuthor=document.getElementById("postAuthor");
 
+  document.getElementsByTagName("main")[0].innerHTML+=pageTemplate();
+
 
 
 
