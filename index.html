@@ -40,13 +40,15 @@
     <script id="comments-template" type="text/x-lodash-template">
       <div id="comments">
         <form onsubmit="postComments()">
+        Name: <input type="text" id="commenter"><br>
+        Text: <input type="textarea" id="commentText"><br>
         </form>
       </div>
     </script>
     <script id="comment-template" type="text/x-lodash-template">
       <div id="comments">
       <form>
-        Name: <input type="text" id="commentName"><br>
+        Name: <input type="text" id="commenter"><br>
         Text: <input type="textarea" id="commentText"><br>
         <footer id="commenter-name">
         </footer>
