@@ -21,7 +21,7 @@ function postComment(){
   let commenterName = document.getElementById('commentName').value;
   let commentText = document.getElementById('commentText').value;
   let commentTemplate = ._template(document.getElementById('comment-template').innerHTML);
-  let commentsSection = document.getElementById('comments'); comment;
-  commentsSection.innerHTML+=commentTemplate({ comment: comment, commenter: commenter });
+  let commentsSection = document.getElementById('comments'); 
+  commentsSection.innerHTML+=commentTemplate({ "comment": comment, "commenter": commenter });
 
 }
