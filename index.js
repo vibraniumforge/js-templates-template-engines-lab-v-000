@@ -19,7 +19,7 @@ function createPost() {
 
 function postComment(){
   let commentTemplate = ._template(document.getElementById('comment-template').innerHTML);
-  let commenterName = document.getElementById('commentName').value;
+  let commenterName = document.getElementById('commenter').value;
   let commentText = document.getElementById('commentText').value;
   let commentsSection = document.getElementById('comments');
   commentsSection.innerHTML+=commentTemplate({ "comment": commenterName, "commenter": commentText });
