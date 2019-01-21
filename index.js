@@ -2,8 +2,13 @@ function createPost() {
   let text=document.getElementById("page-template");
   text.innerHTML="x";
   let pageTemplate=._template.getElementById("page-template").innerHTML;
-  let postTemplate=._template.getElementById("post-template").innerHTML
-  let commentTemplate=._template.getElementById("comments-template").innerHTML
+  let postTemplate=._template.getElementById("post-template").innerHTML;
+  let commentTemplate=._template.getElementById("comments-template").innerHTML;
+
+
+
+
+
 }
 
 function postComment(){
