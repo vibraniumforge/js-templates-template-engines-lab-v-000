@@ -1,6 +1,6 @@
 function createPost() {
   let text=document.getElementById("page-template");
-  text.innerHTML.value="x";
+  text.innerHTML="x";
 }
 
 function postComment(){
