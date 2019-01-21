@@ -3,7 +3,9 @@ function createPost() {
   let postTemplate=._template.getElementById("post-template").innerHTML;
   let commentTemplate=._template.getElementById("comments-template").innerHTML;
 
-  let pa
+  let postTitle=document.getElementById("postTitle");
+  let postBody=document.getElementById("postBody");
+  let postAuthor=document.getElementById("postAuthor");
 
 
 
