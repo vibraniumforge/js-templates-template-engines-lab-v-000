@@ -8,5 +8,5 @@ function postComment(){
   let commenter = document.getElementById('commentName').value;
  let comment = document.getElementById('commentText').value;
  let commentTemplate="
- <div id="comment"><p><%= comment %></p><p>Posted by:<span class="comemnter"><%= commenter %></span></p></div>"
+ <div id="comment"><p><%= comment %></p><p>Posted by:<span class="commenter"><%= commenter %></span></p></div>"
 }
