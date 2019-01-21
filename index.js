@@ -4,7 +4,7 @@ function createPost() {
 }
 
 function postComment(){
-  let text=document.getElementById("post-template");
+  let text = document.getElementById("post-template");
   let commenter = document.getElementById('commentName').value;
  let comment = document.getElementById('commentText').value;
  let commentTemplate="
