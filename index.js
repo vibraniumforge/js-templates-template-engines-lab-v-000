@@ -9,7 +9,7 @@ function createPost() {
 
   document.getElementsByTagName("main")[0].innerHTML+=pageTemplate();
 
-  let blogSection = postTemplate({ 'title': postTitle, 'body': post, 'poster': postAuthor });
+  let blogSection = postTemplate({ 'title': postTitle, 'body': postBody, 'poster': postAuthor });
   let commentsSection = commentsTemplate();
 
   let postElement = document.getElementById("post");
