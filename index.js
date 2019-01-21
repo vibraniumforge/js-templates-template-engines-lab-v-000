@@ -3,6 +3,8 @@ function createPost() {
   let postTemplate=._template.getElementById("post-template").innerHTML;
   let commentTemplate=._template.getElementById("comments-template").innerHTML;
 
+  let pa
+
 
 
 
