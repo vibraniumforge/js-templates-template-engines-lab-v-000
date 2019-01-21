@@ -4,5 +4,5 @@ function createPost() {
 }
 
 function postComment(){
-
+  let text=document.getElementById("post-template");
 }
