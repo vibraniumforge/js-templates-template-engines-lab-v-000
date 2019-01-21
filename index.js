@@ -1,26 +1,30 @@
 function createPost() {
-  let pageTemplate=._template(document.getElementById("page-template").innerHTML);
-  let postTemplate=._template(document.getElementById("post-template").innerHTML);
-  let commentTemplate=._template(document.getElementById("comments-template").innerHTML);
+  // create template functions
+  var pageTemplate = _.template(document.getElementById("page-template").innerHTML);
+  var postTemplate = _.template(document.getElementById("post-template").innerHTML);
+  var commentsTemplate = _.template(document.getElementById("comments-template").innerHTML);
 
-  let postTitle=document.getElementById("postTitle").value;
-  let postBody=document.getElementById("postBody").value;
-  let postAuthor=document.getElementById("postAuthor").value;
+  // get blog values
+  var postTitle = document.getElementById("postTitle").value;
+  var postAuthor = document.getElementById("postAuthor").value;
+  var post = document.getElementById("postBody").value;
 
-  document.getElementsByTagName("main")[0].innerHTML+=pageTemplate();
+  document.getElementsByTagName("main")[0].innerHTML += pageTemplate();
 
-  let blogSection = postTemplate({ 'title': postTitle, 'body': postBody, 'poster': postAuthor });
-  let commentsSection = commentsTemplate();
+  var blogSection = postTemplate({ 'title': postTitle, 'body': post, 'poster': postAuthor });
+  var commentsSection = commentsTemplate();
+  var postElement = document.getElementById("post");
 
-  let postElement = document.getElementById("post");
   postElement.innerHTML = blogSection;
   postElement.getElementsByTagName("footer")[0].innerHTML = commentsSection;
 }
 
 function postComment() {
-  let commenterName = document.getElementById('commentName').value;
-  let commentText = document.getElementById('commentText').value;
-  let commentTemplate = ._template(document.getElementById('comment-template').innerHTML);
-  let commentsSection = document.getElementById('comments'); comment;
-  commentsSection.innerHTML+=commentTemplate({ comment: comment, commenter: commenter });
+  var commentTemplate = _.template(document.getElementById("comment-template").innerHTML);
+
+  var commentText = document.getElementById("commentText").value;
+  var commenterName = document.getElementById("commenter").value;
+
+  var commentsSection = document.getElementById("comments");
+  commentsSection.innerHTML += commentTemplate({ 'commenter': commenterName, 'comment': commentText });
 }
