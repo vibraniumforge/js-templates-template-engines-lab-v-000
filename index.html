@@ -31,27 +31,23 @@
     </script>
     <script id="post-template" type="text/x-lodash-template">
       <article>
-        <header id="post-title">
-        </header>
-        <footer id="post-author">
-        </footer>
+        <header id="post-title"><%- title %></header>
+        <p><%- body %></p>
+        <footer id="post-author"> <p><%- poster %></footer>
       </article>
     </script>
     <script id="comments-template" type="text/x-lodash-template">
       <div id="comments">
         <form onsubmit="postComments()">
-        Name: <input type="text" id="commenter"><br>
-        Text: <input type="textarea" id="commentText"><br>
+          Name: <input type="text" id="commenter"><br>
+          Text: <input type="textarea" id="commentText"><br>
         </form>
       </div>
     </script>
     <script id="comment-template" type="text/x-lodash-template">
-      <div id="comments">
-      <form>
-        Name: <input type="text" id="commenter"><br>
-        Text: <input type="textarea" id="commentText"><br>
-        <footer id="commenter-name">
-        </footer>
+      <div>
+        <p><%= comment %></p>
+        <footer>Posted by: <%= commenter %></footer>
       </div>
     </script>
 
