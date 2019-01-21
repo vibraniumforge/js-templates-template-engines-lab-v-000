@@ -1,7 +1,7 @@
 function createPost() {
-  let pageTemplate=._template.getElementById("page-template").innerHTML;
-  let postTemplate=._template.getElementById("post-template").innerHTML;
-  let commentTemplate=._template.getElementById("comments-template").innerHTML;
+  let pageTemplate=._template(document.getElementById("page-template").innerHTML);
+  let postTemplate=._template(document.getElementById("post-template").innerHTML);
+  let commentTemplate=._template(document.getElementById("comments-template").innerHTML);
 
   let postTitle=document.getElementById("postTitle");
   let postBody=document.getElementById("postBody");
