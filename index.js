@@ -18,10 +18,11 @@ function createPost() {
 }
 
 function postComment(){
-  let text = document.getElementById("post-template");
-  let commenter = document.getElementById('commentName').value;
-  let comment = document.getElementById('commentText').value;
+  let commenterName = document.getElementById('commentName').value;
+  let commentText = document.getElementById('commentText').value;
   let commentTemplate = ._template(document.getElementById('comment-template').innerHTML);
+  let commentsSection = document.getElementById('comments'); comment
+
   let templateFn = _.template(commentTemplate);
   let commentsDiv = document.getElementById('comments');
   let templateHTML = templateFn({ comment: comment, commenter: commenter });
